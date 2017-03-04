@@ -1,0 +1,166 @@
+@font-face {
+	font-family: roboto;
+	src: url(robotolight.ttf);
+}
+body, html {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: roboto;
+}
+.nav-bar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 10%;
+	background: rgb(255, 255, 255);
+	z-index: 999;
+}
+.nav-bar>.row {
+	height: 100%;
+}
+.nav-logo {
+	padding: 40px 0px;
+	background: rgb(0, 100, 0);
+	height: 100%;
+	text-align: center;
+}
+#home {
+	width: 100%;
+	margin-top: 6%;
+	background-image: url(leafBackground.jpeg);
+	background-size: cover;
+	background-position: middle center;
+	background-repeat: no-repeat;
+}
+#home>.row>.col-sm-6 {
+	text-align: center;
+	padding: 50px 50px;
+	font-size: 2.5rem;
+}
+#home>.row>.col-sm-6>p {
+	margin-top: 20%;
+} 
+#logo {
+	max-width: 80%;
+}
+#quote {
+	background: rgb(0, 100, 0);
+	width: 100% !important;
+	padding: 50px 250px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 2.5rem;
+	box-shadow: inset 0px 0px 10px 0px rgb(10, 10, 10);
+}
+#quote>blockquote {
+	padding: 0px;
+	border: 0px solid transparent;
+	text-transform: uppercase;
+	box-shadow: none;
+}
+#quote>blockquote>footer {
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	text-align: right;
+	margin-top: 30px;
+}
+.active-img, .passive-img {
+	width: 100%;
+	height: auto;
+}
+.passive-img {
+	display: none;
+}
+.active-img {
+	display: initial;
+}
+#initiatives {
+	width: 100%;
+}
+.btn-group {
+	width: 100%;
+	margin-left: 20%;
+}
+.btn-primary, .btn {
+	height: 50px;
+	min-width: 20%;
+	background: rgb(0, 100, 0);
+	font-size: 1.5rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	border-radius: 0px;
+	border: 0px solid rgb(255, 255, 255);
+	border-right-width: 2px;
+	transition: all 0.2s ease;
+}
+.btn-primay:hover, .btn:hover {
+	background: rgb(30, 110, 0) !important;
+	border: 0px solid rgb(255, 255, 255);
+	border-right-width: 2px;
+	outline: none;
+}
+.btn-active {
+	background: rgb(255, 255, 255);
+	color: rgb(0, 100, 0);
+}
+.btn-active:hover {
+	background: rgb(255, 255, 255) !important;
+	color: rgb(0, 100, 0);
+	outline: none;
+}
+#info {
+	width: 100%;
+	padding: 50px 20%;
+}
+#info>p {
+	font-size: 2.5rem;
+}
+*:focus {
+	outline: none;
+}
+#team {
+	width: 100%;
+}
+#team>.header {
+	background: rgb(0, 100, 0);
+	width: 100%;
+	margin: 0px;
+	padding: 50px 120px;
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 0px 10px 0px rgb(10, 10, 10);
+}
+#team>.header>.col-sm-5 {
+	text-align: right;
+}
+#team>.header>.col-sm-7 {
+	font-size: 1.5rem;
+}
+.member {
+	text-align: center;
+	padding: 50px 50px;
+	font-size: 1.5rem;
+}
+.img-circle {
+	max-width: 90%;
+}
+#partners {
+	width: 100%;
+	margin-top: 20px;
+}
+#partners>.header {
+	background: rgb(0, 100, 0);
+	width: 100%;
+	margin: 0px;
+	padding: 50px 120px;
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 0px 10px 0px rgb(10, 10, 10);
+}
+#partners>.header>.col-sm-5 {
+	text-align: right;
+}
+#partners>.header>.col-sm-7 {
+	font-size: 2rem;
+}
