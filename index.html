@@ -8,7 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- nav bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#initiatives">INITIATIVES</a></li>
+					<li><a href="#team">TEAM</a></li>
+					<li><a href="#partners">PARTNERS</a></li>
+					<li><a href="#contactUs">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- end -->
 <!-- home -->
 	<div id="home">
 		<div class="row">
@@ -156,7 +179,7 @@
 <!-- join us contribute -->
 	<div id="joinus">
 		<div class="row header">
-			<div class="col-sm-6">
+			<div class="col-sm-6" style="border-right-width: 2px;">
 				<h1>
 					JOIN THE TEAM
 				</h1>
@@ -178,6 +201,62 @@
 	</div>
 <!--  end -->
 <!-- contact us -->
+	<div id="contactUs">
+		<div class="row">
+			<div class="col-sm-4" style="text-align: right;">
+				<h1>CONTACT US</h1>
+			</div>
+			<div class="col-sm-8">
+				<p style="font-size: 2rem;">
+					For any suggestions, ideas, feedback, to join as volunteer or partner with us, please contact us or fill up the form, and we would get back to you as soon as possible.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src = "images/phone.png" style="margin-bottom: 20px;">
+				<p class="lbl">
+					+91 999 014 8307
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<img src = "images/location.png" style="margin-bottom: 20px;">
+				<p class="lbl">
+					International Headquarters
+					586, Sector 21 A Faridabad-121001 Haryana, India
+				</p>
+				<p class="lbl">
+					African Headquarters
+					Commune d'Ibanda, Avenue du Lac 38, Ville de Bukavu, Democratic Republic of Congo
+				</p>
+				<p class="lbl">
+					European Headquarters
+					3, Flat 6, Preston Court, Msierah Street, San Gwann, Sgn 2321, Malta
+				</p>
+			</div>
+			<div class="col-sm-4" style="margin-bottom: 20px;">
+				<img src = "images/mail.png">
+				<p class="lbl">
+					team@greenthegene.org
+				</p>
+			</div>
+		</div>
+	</div>
+<!-- end -->
+<!-- follow us -->
+	<div id="followUs">
+		<div class="row header">
+			<div class="col-sm-6" style="text-align: right;">
+				<h1>FOLLOW US ON</h1>
+			</div>
+			<div class="col-sm-6">
+				<img src="images/facebook.png" style="margin-right: 20px;">
+				<img src="images/linkedin.png" style="margin-right: 20px;">
+				<img src="images/twitter.png" style="margin-right: 20px;">
+				<img src="images/mail.png" style="margin-right: 20px;">
+			</div>
+		</div>
+	</div>
 <!-- end -->
 </body>
 <script src="js/jquery.js"></script>

@@ -31,3 +31,30 @@ $('#btn-img-3').click( function() {
     $('#img1').removeClass('active-img');
     $('#info').html("<p>Clean Up the World is a community based environmental program that inspires and empowers individuals and communities from every corner of the globe to clean up, fix up and conserve their environment. </p><a href='#''>Read More</a><br /><br /><button class='btn btn-primary'>ALL INITIATIVES</button>");
 });
+
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
