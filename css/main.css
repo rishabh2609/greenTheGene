@@ -102,11 +102,22 @@ body, html {
 	border-right-width: 2px;
 	outline: none;
 }
+.btn-primay:focus, .btn:focus {
+	background: rgb(30, 110, 0) !important;
+	border: 0px solid rgb(255, 255, 255);
+	border-right-width: 2px;
+	outline: none;
+}
 .btn-active {
 	background: rgb(255, 255, 255);
 	color: rgb(0, 100, 0);
 }
 .btn-active:hover {
+	background: rgb(255, 255, 255) !important;
+	color: rgb(0, 100, 0);
+	outline: none;
+}
+.btn-active:focus {
 	background: rgb(255, 255, 255) !important;
 	color: rgb(0, 100, 0);
 	outline: none;
@@ -164,3 +175,62 @@ body, html {
 #partners>.header>.col-sm-7 {
 	font-size: 2rem;
 }
+#joinus {
+	width: 100%;
+	margin-top: 20px;
+}
+#joinus>.header {
+	background: rgb(30, 110, 0);
+	width: 100%;
+	margin: 0px;
+	padding: 50px 120px;
+	color: rgb(255, 255, 255);
+}
+#joinus>.header>.col-sm-6{
+	text-align: center;
+	border: 0px solid rgb(255, 255, 255);
+}
+#btn-join, #btn-contri {
+	background: rgb(0, 100, 0);
+	color: rgb(255, 255, 255);
+	min-width: 20%;
+	font-size: 2rem;
+	padding: 10px 10px;
+	border: 0px solid transparent;
+}
+@media only screen and (max-width: 769px) {
+	#home>.row>.col-sm-6 {
+		padding: 50px 25px;
+		font-size: 2rem;
+	}
+	#quote {
+		padding: 50px 120px;
+	}
+}
+@media only screen and (max-width: 415px) {
+	#home>.row>.col-sm-6 {
+		padding: 50px 10px;
+		font-size: 2rem;
+	}
+	#quote {
+		padding: 50px 10px;
+	}
+	.btn-group {
+		margin-left: 0%;
+	}
+	.btn-primary, .btn {
+		font-size: 1rem;
+	}
+	#info {
+		padding: 50px 2%;
+	}
+	#info>p {
+		font-size: 2rem;
+	}
+	#team>.header {
+		padding: 50px 10px;
+	}
+	#partners>.header {
+		padding: 50px 10px;
+	}
+}	
